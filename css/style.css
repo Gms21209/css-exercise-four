@@ -1,35 +1,72 @@
-*. *:before, *:after {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
 body {
   background-color: #dadada;
-  font-size: 10px;
-}
-
-.container {
-  position: relative;
-  text-align: center;
 }
 
 .main {
   text-align: center;
   text-transform: uppercase;
   font-family: sans-serif;
-  font-size: 2em;
+  font-size: 20px;
   letter-spacing: 2px;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin: 6% auto;
 }
 
-.city {
-  position: absolute;
-  margin-bottom: 100px;
-  font-size: 2em;
+h2 {
+  font-size: 1.5em;
+  padding: 4% 0 0 4%;
+  text-align: left;
 }
 
-.responsive {
+.baku {
+  background-image: url(../images/baku.jpg);
+}
+
+.london {
+  background-image: url(../images/london.png);
+}
+
+.madrid {
+  background-image: url(../images/madrid.jpg);
+}
+
+.rome {
+  background-image: url(../images/rome.jpg);
+}
+
+.preview {
   width: 100%;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  height: 400px;
+  float: left;
+  padding: 1%;
+  margin-bottom: 2%;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 575px) {
+  .preview {
+    margin: 1%;
+    width: 48%;
+    height: 300px;
+  }
+
+  h2 {
+    padding: 2% 0 0 2%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .preview {
+    margin: 1%;
+    width: 23%;
+    height: 200px;
+  }
+
+  h2 {
+    padding: 0 0 0 1%;
+  }
 }
